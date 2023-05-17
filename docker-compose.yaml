@@ -7,7 +7,7 @@ services:
     image: web:v1
     container_name: web
     ports:
-      -"80:80"
+     -"80:80"
   mongodb:
     image: mongodb:v1
     container_name: mongodb
