@@ -46,5 +46,9 @@ services:
     container_name: payment
     depends_on:
       - rabbitmq
+  rating:
+    image: rating:v1
+    container_name: rating
+    depends_on: mysql    
 
 # The dependencies for every module developer will tell us no need to woryy abt it      
