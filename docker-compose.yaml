@@ -47,7 +47,7 @@ services:
     depends_on:
       - rabbitmq
   rating:
-    image: rating:v1
+    image: ratings:v1
     container_name: rating
     depends_on:
       - catalogue
