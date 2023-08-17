@@ -42,7 +42,7 @@ sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-
 ```
  docker-compose --version
  ```
-* Run docker-compose file
+* Run the docker-compose file
 ```
 docker-compose up -d
 ```
