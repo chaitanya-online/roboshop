@@ -7,7 +7,7 @@ We are going to create Docker images for every service and deploy them as Docker
 #### Steps:
 * Clone this project.
 ```
-git clone https://github.com/techworldwithsiva/roboshop.git
+https://github.com/chaitanya-online/roboshop
 ```
 * Build the images for each service.
 ```
@@ -32,7 +32,17 @@ mkdir redis
 ```
 mkdir mongodb
 ```
-* Run docker compose file
+* How to install docker-compose. ?
+```
+```
+sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+```
+ sudo chmod +x /usr/local/bin/docker-compose
+```
+```
+ docker-compose --version
+ ```
+* Run the docker-compose file
 ```
 docker-compose up -d
 ```

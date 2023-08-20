@@ -48,11 +48,19 @@ services:
     container_name: payment
     depends_on:
       - rabbitmq
+<<<<<<< HEAD
   rating:
     image: richeb/ratings:v1
     container_name: rating
     depends_on:
       - catalogue
+=======
+  # rating:
+  #   image: ratings:v1
+  #   container_name: rating
+  #   depends_on:
+  #     - catalogue
+>>>>>>> 4833fa178b867b5d802b87d0d831cff07c3e623f
    
 
 # The dependencies for every module developer will tell us no need to woryy abt it      
