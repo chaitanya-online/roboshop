@@ -20,7 +20,7 @@ services:
   redis:
     image: redis
   user:
-    image: user:v1
+    image: richeb/user:v1
     container_name: user
     depends_on:
       - mongodb
