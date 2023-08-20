@@ -25,29 +25,29 @@ services:
     depends_on:
       - mongodb
       - redis
-  cart:
-    image: richeb/cart:v1
-    container_name: cart
-    depends_on:
-      - catalogue
-      - redis
-  mysql:
-    image: richeb/mysql:v1
-    container_name: mysql
+  # cart:
+  #   image: richeb/cart:v1
+  #   container_name: cart
+  #   depends_on:
+  #     - catalogue
+  #     - redis
+  # mysql:
+  #   image: richeb/mysql:v1
+  #   container_name: mysql
        
-  shipping:
-    image: richeb/shipping:v1
-    container_name: shipping
-    depends_on:
-      - mysql
-  rabbitmq:
-    image: rabbitmq
-    container_name: rabbitmq
-  payment:
-    image: richeb/payment:v1
-    container_name: payment
-    depends_on:
-      - rabbitmq
+  # shipping:
+  #   image: richeb/shipping:v1
+  #   container_name: shipping
+  #   depends_on:
+  #     - mysql
+  # rabbitmq:
+  #   image: rabbitmq
+  #   container_name: rabbitmq
+  # payment:
+  #   image: richeb/payment:v1
+  #   container_name: payment
+  #   depends_on:
+  #     - rabbitmq
   # rating:
   #   image: richeb/ratings:v1
   #   container_name: rating
