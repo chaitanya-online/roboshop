@@ -25,12 +25,12 @@ services:
     depends_on:
       - mongodb
       - redis
-  # cart:
-  #   image: richeb/cart:v1
-  #   container_name: cart
-  #   depends_on:
-  #     - catalogue
-  #     - redis
+  cart:
+    image: richeb/cart:v1
+    container_name: cart
+    depends_on:
+      - catalogue
+      - redis
   # mysql:
   #   image: richeb/mysql:v1
   #   container_name: mysql
