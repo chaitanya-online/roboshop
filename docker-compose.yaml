@@ -5,7 +5,7 @@ networks:
    # This is equvalent to the docker volume create [volume-name] these are  named volumes                
 services:
   web:
-    image: web:v1   # for now using this image from local only
+    image: richeb/web:v1   # for now using this image from local only
     container_name: web
     ports:
       - "80:80"
