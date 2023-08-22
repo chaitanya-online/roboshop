@@ -8,7 +8,7 @@ services:
     image: web:v1   # for now using this image from local only
     container_name: web
     ports:
-      - "81:80"
+      - "80:80"
   mongodb:
     image: richeb/mongodb:v1
     container_name: mongodb
