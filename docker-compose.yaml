@@ -31,9 +31,9 @@ services:
     depends_on:
       - catalogue
       - redis
-  # mysql:
-  #   image: richeb/mysql:v1
-  #   container_name: mysql
+  mysql:
+    image: richeb/mysql:v1
+    container_name: mysql
        
   # shipping:
   #   image: richeb/shipping:v1
