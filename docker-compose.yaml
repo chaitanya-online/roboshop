@@ -35,11 +35,12 @@ services:
     image: richeb/mysql:v1
     container_name: mysql
        
-  # shipping:
-  #   image: richeb/shipping:v1
-  #   container_name: shipping
-  #   depends_on:
-  #     - mysql
+  shipping:
+    image: richeb/shipping:v1
+    container_name: shipping
+    depends_on:
+      - mysql
+      
   rabbitmq:
     image: rabbitmq
     container_name: rabbitmq
