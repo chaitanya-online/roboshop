@@ -8,7 +8,7 @@ services:
     image: web:v1   # for now using this image from local only
     container_name: web
     ports:
-      - "80:80"
+      - "80:81"
   mongodb:
     image: richeb/mongodb:v1
     container_name: mongodb
@@ -40,7 +40,7 @@ services:
     container_name: shipping
     depends_on:
       - mysql
-      
+
   rabbitmq:
     image: rabbitmq
     container_name: rabbitmq
